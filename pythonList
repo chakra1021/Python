@@ -1,0 +1,170 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov 16 14:46:01 2019
+
+@author: chakra
+"""
+
+#PYTHON COLLECTION.
+#there are 4 type of list in PYTHON, THEY ARE:
+#LIST, TUPLE, SET and DICTIONARY
+
+#lIST is a collection which are ordered and changeable. it allows duplicate too
+#List are represented with [] bracket
+
+x=["chakra","chahana", "indra", "sabhya"]
+
+#print the list
+print(x)
+
+#print by index, starts with index 0 thats 1
+#will print indra since its in index 2 thats 3
+print(x[2])
+
+#members can be replacable
+#lets replace indra with IndraMaya, which is in index 2
+x[2]="indraMaya"
+
+#check the list
+print(x)
+
+#NEGATIVE INDEXING
+#-1 means last items and son on with -2
+print(x[-1])
+
+#RANGE OF INDEX
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+#index 2 included not 5
+print(thislist[2:5])  
+
+#RANGE OF NEGATIVE INDEX
+#-4 include but not -1 
+#output will be ['orange', 'kiwi', 'melon']
+print(thislist[-4:-1])
+
+#loop through list
+thelist = ["apple", "banana", "cherry"]
+for x in thelist:
+  print(x)
+  
+#check if the item exist
+if "apple" in thelist:
+    print("yes apple exist")
+else:
+    print("no apple on list")
+    
+    
+#lsit length
+#use len() function with variable that you want to find length of
+print(len(thelist))
+
+#ADD ITEMS
+#adding items at the end of the list use append()
+thelist.append("pineapple")
+print(thelist)
+
+#to ADD items at the specific INDEX use insert() method as insert(1, itemname)
+#insert at index 0 thats 1st items
+thelist.insert(0,"mango")
+print(thelist)
+
+#REMOVE Items
+thelist.remove("banana")
+print(thelist)
+
+#pop() removes specified index or the last items
+thelist.pop(1)
+print(thelist)
+
+#del() can also be used to remove specified index
+del thelist[2]
+print(thelist)
+
+#clear() method empty the list
+#thelist.clear()
+#print(thelist)
+
+'''#copy list
+thislist = ["apple", "banana", "cherry"]
+mylist=thislist.copy()
+print(mylist)
+
+#another way to copy
+mylist=list(thislist)
+print(mylist)
+'''
+#join TWO list
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+
+#Another way to join two lists are by appending all the items from list2 into list1, one by one:
+#Append list2 into list1:
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+
+#you can use the extend() method, which purpose is to add elements from one list to another list:
+#Use the extend() method to add list2 at the end of list1:
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)
+
+#the list constructor
+#use double round bracket, hut the display list will be in [] 
+mynewlist=list(("cp","neopaney","pittsburgh","PA"))
+print(mynewlist)
+#---------------------------------------------------------------------------------------------------
+'''List Methods
+Python has a set of built-in methods that you can use on lists.
+
+Method	Description
+append()	Adds an element at the end of the list
+clear()	Removes all the elements from the list
+copy()	Returns a copy of the list
+count()	Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position
+pop()	Removes the element at the specified position
+remove()	Removes the item with the specified value
+reverse()	Reverses the order of the list
+sort()	Sorts the list'''
+#---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
